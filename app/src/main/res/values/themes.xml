@@ -1,9 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TaskManager" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Add these required attributes -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="backgroundColor">@color/white</item>
+
+        <!-- Add drawerLayoutStyle if needed -->
+        <item name="drawerLayoutStyle">@style/Widget.TaskManager.DrawerLayout</item>
     </style>
 
     <style name="Theme.TaskManager" parent="Base.Theme.TaskManager" />
+
+    <!-- Optional: Custom DrawerLayout style -->
+    <style name="Widget.TaskManager.DrawerLayout" parent="Widget.Material3.DrawerLayout">
+        <!-- Customize drawer layout here -->
+    </style>
 </resources>

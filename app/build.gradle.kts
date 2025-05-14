@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.example.taskmanager"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -36,16 +36,19 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.androidx.recyclerview.v131)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation(libs.material)  // Material Components library
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.drawerlayout)  // Add this for DrawerLayout
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.recyclerview)
+
+    // Remove duplicate recyclerview implementation
+    // implementation(libs.androidx.recyclerview.v131)  // Remove this line
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

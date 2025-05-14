@@ -2,4 +2,6 @@
     <string name="app_name">TaskManager</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plagiarism_declaration_ni_your_name_declare_that_this_work_is_my_own_signed_on_may_14_2025_n_documentation_n_this_app_allows_task_management_with_add_delete_and_completion_features_n_add_at_least_two_pages_of_text_here">Plagiarism Declaration:\nI, [Your Name], declare that this work is my own, signed on May 14, 2025.\n\nDocumentation:\n- This app allows task management with add, delete, and completion features...\n- [Add at least two pages of text here]</string>
+    <string name="watch_demo_video">Watch Demo Video</string>
 </resources>

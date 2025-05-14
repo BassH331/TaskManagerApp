@@ -4,23 +4,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="?attr/backgroundColor">
+    android:background="#ffffff">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Task Suggestions"
         android:textSize="18sp"
-        android:textColor="?attr/textColorPrimary"
+        android:textColor="#5C57ED"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp" />
 
-    <RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/suggestionList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="?attr/backgroundColor" />
+        android:background="#ffffff" />
 
     <Button
         android:id="@+id/loadSuggestionsButton"

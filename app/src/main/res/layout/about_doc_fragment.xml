@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="?attr/backgroundColor">
+    android:background="#ffffff">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Plagiarism Declaration:\nI, [Your Name], declare that this work is my own, signed on May 14, 2025.\n\nDocumentation:\n- This app allows task management with add, delete, and completion features...\n- [Add at least two pages of text here]"
+            android:text="@string/plagiarism_declaration_ni_your_name_declare_that_this_work_is_my_own_signed_on_may_14_2025_n_documentation_n_this_app_allows_task_management_with_add_delete_and_completion_features_n_add_at_least_two_pages_of_text_here"
             android:textSize="16sp"
             android:textColor="#126C8E"
             android:layout_marginBottom="16dp" />
@@ -22,7 +22,7 @@
             android:id="@+id/videoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Watch Demo Video"
+            android:text="@string/watch_demo_video"
             android:backgroundTint="#19A181"
             android:padding="8dp"
             android:layout_gravity="center" />

@@ -2,4 +2,86 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph" />
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskListFragment">
+
+    <!-- Task List Fragment: Displays the list of tasks -->
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.example.taskmanager.TaskListFragment"
+        tools:layout="@layout/task_list_fragment">
+        <action
+            android:id="@+id/action_taskList_to_taskEdit"
+            app:destination="@id/taskEditFragment" />
+        <action
+            android:id="@+id/action_taskList_to_taskSuggestions"
+            app:destination="@id/taskSuggestionsFragment" />
+        <action
+            android:id="@+id/action_taskList_to_notificationsSettings"
+            app:destination="@id/notificationsSettingsFragment" />
+        <action
+            android:id="@+id/action_taskList_to_aboutDoc"
+            app:destination="@id/aboutDocFragment" />
+    </fragment>
+
+    <!-- Task Suggestions Fragment: Displays suggested tasks -->
+    <fragment
+        android:id="@+id/taskSuggestionsFragment"
+        android:name="com.example.taskmanager.TaskSuggestionsFragment"
+        tools:layout="@layout/task_suggestions_fragment">
+        <action
+            android:id="@+id/action_taskSuggestions_to_taskList"
+            app:destination="@id/taskListFragment" />
+        <action
+            android:id="@+id/action_taskSuggestions_to_notificationsSettings"
+            app:destination="@id/notificationsSettingsFragment" />
+        <action
+            android:id="@+id/action_taskSuggestions_to_aboutDoc"
+            app:destination="@id/aboutDocFragment" />
+    </fragment>
+
+    <!-- Notifications Settings Fragment: Manages notification settings -->
+    <fragment
+        android:id="@+id/notificationsSettingsFragment"
+        android:name="com.example.taskmanager.NotificationsSettingsFragment"
+        tools:layout="@layout/notifications_settings_fragment">
+        <action
+            android:id="@+id/action_notificationsSettings_to_taskList"
+            app:destination="@id/taskListFragment" />
+        <action
+            android:id="@+id/action_notificationsSettings_to_taskSuggestions"
+            app:destination="@id/taskSuggestionsFragment" />
+        <action
+            android:id="@+id/action_notificationsSettings_to_aboutDoc"
+            app:destination="@id/aboutDocFragment" />
+    </fragment>
+
+    <!-- About Doc Fragment: Displays app information -->
+    <fragment
+        android:id="@+id/aboutDocFragment"
+        android:name="com.example.taskmanager.AboutDocFragment"
+        tools:layout="@layout/about_doc_fragment">
+        <action
+            android:id="@+id/action_aboutDoc_to_taskList"
+            app:destination="@id/taskListFragment" />
+        <action
+            android:id="@+id/action_aboutDoc_to_taskSuggestions"
+            app:destination="@id/taskSuggestionsFragment" />
+        <action
+            android:id="@+id/action_aboutDoc_to_notificationsSettings"
+            app:destination="@id/notificationsSettingsFragment" />
+    </fragment>
+
+    <!-- Task Edit Fragment: For adding or editing tasks -->
+    <fragment
+        android:id="@+id/taskEditFragment"
+        android:name="com."
+        tools:layout="@layout/task_edit_fragment">
+        <action
+            android:id="@+id/action_taskEdit_to_taskList"
+            app:destination="@id/taskListFragment"
+            app:popUpTo="@id/taskListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

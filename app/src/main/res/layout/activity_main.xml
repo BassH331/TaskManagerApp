@@ -4,7 +4,15 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/backgroundColor">
+    android:background="#ffffff">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,21 +22,24 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
         <FrameLayout
             android:id="@+id/fragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1" >
+
+
+        </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/backgroundColor"
+            android:background="#9CECE0"
             app:menu="@menu/bottom_nav_menu"
             app:itemIconTint="#126C8E"
             app:itemTextColor="#16E0FA" />

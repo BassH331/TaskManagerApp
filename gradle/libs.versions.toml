@@ -1,7 +1,7 @@
 [versions]
 agp = "8.3.0"
 kotlin = "1.9.0"
-coreKtx = "1.16.0"
+coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -13,8 +13,10 @@ navigationFragmentKtx = "2.9.0"
 navigationUiKtx = "2.9.0"
 recyclerview = "1.4.0"
 recyclerviewVersion = "1.3.1"
+androidxDrawerLayout = "1.2.0"
 
 [libraries]
+androidx-drawerlayout = { group = "androidx.drawerlayout", name = "drawerlayout", version.ref = "androidxDrawerLayout" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-recyclerview-v131 = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerviewVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

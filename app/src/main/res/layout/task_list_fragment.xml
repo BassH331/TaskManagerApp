@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search tasks..."
+        android:padding="8dp"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#11CA64" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/taskInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter a task"
+            android:padding="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#08A5C1" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:padding="8dp"
+            android:backgroundTint="#13D8A0"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <view class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:id="@+id/taskList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="?attr/backgroundColor" />
+
+    <Button
+        android:id="@+id/deleteCompletedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Completed"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#13D8A0"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

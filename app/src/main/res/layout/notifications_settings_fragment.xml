@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/backgroundColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Settings"
+        android:textSize="18sp"
+        android:textColor="#0A337A"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <Switch
+        android:id="@+id/emailSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Email"
+        android:textColor="#0B1AAC" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email address"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#0B1AAC"
+        android:layout_marginTop="4dp" />
+
+    <Switch
+        android:id="@+id/smsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable SMS"
+        android:textColor="#0B1AAC"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#76D19B"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#13D8A0"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
